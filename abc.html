@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="text-align:center"> Tabela periódica </h1>
+
+<head>
+<style>
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 
+
+</style>
+
+
+<table style="margin-left: auto; margin-right: auto;" >
+
+	<tbody>
+		<tr>
+			<td></td>
+			<td align="center">I A</td>
+			<td align="center">II A</td>
+			<td align="center">III B</td>
+			<td align="center">IV B</td>
+			<td align="center">V B</td>
+			<td align="center">VI B</td>
+			<td align="center">VII B</td>
+			<td align="center">VIII B</td>
+			<td align="center">VIII B</td>
+			<td align="center">VIII B</td>
+			<td align="center">I B</td>
+			<td align="center">II B</td>
+			<td align="center">III A</td>
+			<td align="center">IV A</td>
+			<td align="center">V A</td>
+			<td align="center">VI A</td>
+			<td align="center">VII A</td>
+			<td align="center">VIII A</td>
+		<tr>
+			<td><font color="darkslategray">1</font>
+			<td bgcolor="mediumseagreen"><input type="checkbox" name="name">H</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td bgcolor="mediumpurple"><input type="checkbox" name="name" />He</td>
+		</tr>
+		<tr>
+			<td><font color="darkslategray">2</font>
+			<td bgcolor="orange"><input type="checkbox" name="name" />Li</td>
+			<td bgcolor="peru"><input type="checkbox" name="name" />Be</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td bgcolor="paleturquoise"><input type="checkbox" name="name" />B</td>
+			<td bgcolor="darkseagreen"><input type="checkbox" name="name" />C</td>
+			<td bgcolor="darkseagreen"><input type="checkbox" name="name" />N</td>
+			<td bgcolor="darkseagreen"><input type="checkbox" name="name" />O</td>
+			<td bgcolor="yellowgreen"><input type="checkbox" name="name" />F</td>
+			<td bgcolor="mediumpurple"><input type="checkbox" name="name" />Ne</td>
+		</tr>
+		<tr>
+			<td><font color="darkslategray">3</font>
+			<td bgcolor="orange"><input type="checkbox" name="name" />Na</td>
+			<td bgcolor="peru"><input type="checkbox" name="name" />Mg</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td bgcolor="lightskyblue"><input type="checkbox" name="name" />Al</td>
+			<td bgcolor="paleturquoise"><input type="checkbox" name="name" />Si</td>
+			<td bgcolor="darkseagreen"><input type="checkbox" name="name" />P</td>
+			<td bgcolor="darkseagreen"><input type="checkbox" name="name" />S</td>
+			<td bgcolor="yellowgreen"><input type="checkbox" name="name" />Cl</td>
+			<td bgcolor="mediumpurple"><input type="checkbox" name="name" />Ar</td>
+		</tr>
+		<tr>
+			<td><font color="darkslategray">4</font>
+			<td bgcolor="orange"><input type="checkbox" name="name" />K</td>
+			<td bgcolor="peru"><input type="checkbox" name="name" />Ca</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Sc</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Ti</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />V</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Cr</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Mn</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Fe</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Co</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Ni</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Cu</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Zn</td>
+			<td bgcolor="lightskyblue"><input type="checkbox" name="name" />Ga</td>
+			<td bgcolor="paleturquoise"><input type="checkbox" name="name" />Ge</td>
+			<td bgcolor="paleturquoise"><input type="checkbox" name="name" />As</td>
+			<td bgcolor="darkseagreen"><input type="checkbox" name="name" />Se</td>
+			<td bgcolor="yellowgreen"d><input type="checkbox" name="name" />Br</td>
+			<td bgcolor="mediumpurple"><input type="checkbox" name="name" />Kr</td>
+		</tr>
+		<tr>
+			<td><font color="darkslategray">5</font>
+			<td bgcolor="orange"><input type="checkbox" name="name" />Rb</td>
+			<td bgcolor="peru"><input type="checkbox" name="name" />Sr</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Y</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Zr</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Nb</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Mo</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Tc</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Ru</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Rh</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Pd</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Ag</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Cd</td>
+			<td bgcolor="lightskyblue"><input type="checkbox" name="name" />In</td>
+			<td bgcolor="lightskyblue"><input type="checkbox" name="name" />Sn</td>
+			<td bgcolor="paleturquoise"><input type="checkbox" name="name" />Sb</td>
+			<td bgcolor="paleturquoise"><input type="checkbox" name="name" />Te</td>
+			<td bgcolor="yellowgreen"><input type="checkbox" name="name" />I</td>
+			<td bgcolor="mediumpurple"><input type="checkbox" name="name" />Xe</td>
+		</tr>
+		<tr>
+			<td><font color="darkslategray">6</font>
+			<td bgcolor="orange"><input type="checkbox" name="name" />Cs</td>
+			<td bgcolor="peru"><input type="checkbox" name="name" />Ba</td>
+			<td bgcolor="mediumorchid">&nbsp;</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Hf</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Ta</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />W</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Re</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Os</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Ir</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Pt</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Au</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Hg</td>
+			<td bgcolor="lightskyblue"><input type="checkbox" name="name" />Tl</td>
+			<td bgcolor="lightskyblue"><input type="checkbox" name="name" />Pb</td>
+			<td bgcolor="lightskyblue"><input type="checkbox" name="name" />Bi</td>
+			<td bgcolor="lightskyblue"><input type="checkbox" name="name" />Po</td>
+			<td bgcolor="yellowgreen"><input type="checkbox" name="name" />At</td>
+			<td bgcolor="mediumpurple"><input type="checkbox" name="name" />Rn</td>
+		</tr>
+		<tr>
+			<td><font color="darkslategray">7</font>
+			<td bgcolor="orange"><input type="checkbox" name="name" />Fr</td>
+			<td bgcolor="peru"><input type="checkbox" name="name" />Ra</td>
+			<td bgcolor="red">&nbsp;</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Rf</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Db</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Sg</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Bh</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Hs</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Mt</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Ds</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Rg</td>
+			<td bgcolor="plum"><input type="checkbox" name="name" />Cn</td>
+			<td><input type="checkbox" name="name" />Nh</td>
+			<td><input type="checkbox" name="name" />Fl</td>
+			<td><input type="checkbox" name="name" />Mc</td>
+			<td><input type="checkbox" name="name" />Lv</td>
+			<td><input type="checkbox" name="name" />Ts</td>
+			<td bgcolor="mediumpurple"><input type="checkbox" name="name" />Og</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td bgcolor="mediumorchid"><input type="checkbox" name="name" />La</td>
+			<td bgcolor="mediumorchid"><input type="checkbox" name="name" />Ce</td>
+			<td bgcolor="mediumorchid"><input type="checkbox" name="name" />Pr</td>
+			<td bgcolor="mediumorchid"><input type="checkbox" name="name" />Nd</td>
+			<td bgcolor="mediumorchid"><input type="checkbox" name="name" />Pm</td>
+			<td bgcolor="mediumorchid"><input type="checkbox" name="name" />Sm</td>
+			<td bgcolor="mediumorchid"><input type="checkbox" name="name" />Eu</td>
+			<td bgcolor="mediumorchid"><input type="checkbox" name="name" />Gd</td>
+			<td bgcolor="mediumorchid"><input type="checkbox" name="name" />Tb</td>
+			<td bgcolor="mediumorchid"><input type="checkbox" name="name" />Dy</td>
+			<td bgcolor="mediumorchid"><input type="checkbox" name="name" />Ho</td>
+			<td bgcolor="mediumorchid"><input type="checkbox" name="name" />Er</td>
+			<td bgcolor="mediumorchid"><input type="checkbox" name="name" />Tm</td>
+			<td bgcolor="mediumorchid"><input type="checkbox" name="name" />Yb</td>
+			<td bgcolor="mediumorchid"><input type="checkbox" name="name" />Lu</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td bgcolor="red"><input type="checkbox" name="name" />Ac</td>
+			<td bgcolor="red"><input type="checkbox" name="name" />Th</td>
+			<td bgcolor="red"><input type="checkbox" name="name" />Pa</td>
+			<td bgcolor="red"><input type="checkbox" name="name" />U</td>
+			<td bgcolor="red"><input type="checkbox" name="name" />Np</td>
+			<td bgcolor="red"><input type="checkbox" name="name" />Pu</td>
+			<td bgcolor="red"><input type="checkbox" name="name" />Am</td>
+			<td bgcolor="red"><input type="checkbox" name="name" />Cm</td>
+			<td bgcolor="red"><input type="checkbox" name="name" />Bk</td>
+			<td bgcolor="red"><input type="checkbox" name="name" />Cf</td>
+			<td bgcolor="red"><input type="checkbox" name="name" />Es</td>
+			<td bgcolor="red"><input type="checkbox" name="name" />Fm</td>
+			<td bgcolor="red"><input type="checkbox" name="name" />Md</td>
+			<td bgcolor="red"><input type="checkbox" name="name" />No</td>
+			<td bgcolor="red"><input type="checkbox" name="name" />Lr</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>
